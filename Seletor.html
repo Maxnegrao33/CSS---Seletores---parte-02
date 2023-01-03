@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta author="Maciel Oliveira" />
+    <meta http-equiv="X-UA-Compatible" content="IE-edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Seletores CSS</title>
+    <style>
+      /*Seletores
+
+      /* Seletor de Classes;*/
+      .seletores-comuns {
+        color: black;
+        background-color: lightpink;
+      }
+
+      .text-maiusculo {
+        text-transform: uppercase;
+      }
+      /* Seletor Universal
+      Simplesmente sua sintaxe é assim:
+      * {
+        color: white;
+        text-align: center
+      Não precisa indicar tag id, class ou nenhuma outra
+        }
+
+      */
+
+      /* Seletor de Atributo*/
+      [title] {
+        color: blue;
+      }
+
+      /*Se caso quiser atribuir este valor à um título específico*/
+      [title="Televisão 46 pol."] {
+        color: red;
+      }
+
+      /*Pode ser usado o "pipe também"*/
+      [title|="Celular 5G" {
+        color: black;
+      }
+
+      /*Pode Conter link*/
+      [href^="http://"] {
+          background-color: blueviolet;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Seletores CSS</h1>
+    <p id="text-boas-vindas">Bem Vindos!</p>
+    <p id="explicacao-seletores">No CSS possuímos os seletores por ID</p>
+
+    <div>
+      <ul>
+        <li class="seletores-comuns">
+          <b>Seletor por tipo:</b> Busca elementos por uma tag HTML5
+        </li>
+        <li class="seletores-comuns text-maiusculo">
+          <b>Busca elementos por ID (#)</b>
+        </li>
+        <li class="seletores-comuns text-maiusculo">
+          <b>Busca elementos por Classes (.)</b>
+        </li>
+        <li class="seletores-comuns">
+          <b>Seleciona todos os elementos (*)</b>
+        </li>
+        <li class="seletores-comuns"><b></b></li>
+      </ul>
+    </div>
+  </body>
+</html>
